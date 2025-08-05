@@ -66,7 +66,7 @@ services:
       - "172.16.172.14:123:123/udp"
     networks:
       lancache_net:
-        ipv4_address: 172.16.172.14
+        ipv4_address: 172.21.0.18
 
 networks:
   lancache_net:
