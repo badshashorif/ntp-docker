@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+  ntp:
+    image: cturra/ntp
+    container_name: ntp
+    restart: always
+    read_only: true
+    tmpfs:
+      - /etc/chrony:rw,mode=1750
+      - /run/chrony:rw,mode=1750
+      - /var/lib/chrony:rw,mode=1750
+    environment:
+      - NTP_SERVERS=0.asia.pool.ntp.org,1.asia.pool.ntp.org
+    ports:
+      - "172.16.172.14:123:123/udp"
+    networks:
+      lancache_net:
+        ipv4_address: 172.21.0.18
+
+networks:
+  lancache_net:
+    external: true
