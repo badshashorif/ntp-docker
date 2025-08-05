@@ -165,6 +165,6 @@ MIT
 
 **MD SHORIFUL ISLAM**
 Network & System Engineer – [Dot Internet](https://www.dotinternet.com.bd)
-GitHub: [shoriful-dot](https://github.com/badshashorif)
+GitHub: [badshashorif](https://github.com/badshashorif)
 
 ---
