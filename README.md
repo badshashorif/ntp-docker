@@ -36,8 +36,8 @@ This repository contains a production-ready deployment of a secure and lightweig
 ```bash
 docker network create \
   --driver=bridge \
-  --subnet=172.16.172.0/24 \
-  --gateway=172.16.172.1 \
+  --subnet=172.21.0.0/24 \
+  --gateway=172.21.0.1 \
   lancache_net
 ````
 
